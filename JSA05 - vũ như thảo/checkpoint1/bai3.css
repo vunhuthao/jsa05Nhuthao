@@ -1,0 +1,27 @@
+.form{
+    border: solid 3px black;
+    height: 400px;
+    width: 500px;
+    background-color: aquamarine;
+    margin:auto;
+}
+.d1{
+
+    display: block;
+    margin-left: 90px;
+    
+}
+.iput{
+    margin-top: 40px;
+    border-radius: 10px;
+    height: 40px;
+    width: 300px;
+}
+.button{
+    background-color: rgb(144, 144, 199);
+    margin-left: 130px;
+    border-radius: 20px;
+    height: 40px;
+    width: 90px;
+    margin-top: 40px;
+}

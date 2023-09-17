@@ -1,0 +1,14 @@
+.button{
+    display:block;
+    margin-top: 1rem;
+}
+.f{
+    border: 3px solid black;
+    width: 300px;
+    text-align: center;
+    margin:auto;
+}
+button{
+    margin-left: 106px;
+}
+
