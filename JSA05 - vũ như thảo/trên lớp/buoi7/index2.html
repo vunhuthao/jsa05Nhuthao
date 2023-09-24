@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>hIỆN THỊ DỮ LIỆU</h2>
+    <div id="data1"></div>
+    <script>
+         const cData = async () => {
+            try{
+                const respone = await fetch("https://jsonplaceholder.typicode.com/posts/1");
+                const data1 = await respone.json();
+
+                let userId = document.createElement('h3');
+                let title  = document.createElement('h3');
+                let body = document.createElement('h3');
+
+                userId.textContent = 'User ID: ' + data1.userId;
+                title.textContent = 'Title: ' + data1.title;
+                body.textContent = 'Body; ' + data1.body;
+
+                const dataE = document.getElementById('data1');
+                dataE.appendChild(userId);
+                dataE.appendChild(title);
+                dataE.appendChild(body);
+            }
+            catch(error){
+                console.error('Error: ', error);
+            }
+        }
+        cData();
+
+    </script>
+</body>
+</html>
