@@ -21,11 +21,12 @@ sumit.addEventListener("click",function(){
 })
 
 let exam = document.getElementById("test");
-exam.addEventListener("click", function(){
-    let gt = localStorage.getItem('TêN').value;
-    if (gt.value == null){
+exam.addEventListener("submit", function(){
+    let gt = localStorage.getItem('TêN');
+    console.log(gt)
+    if (gt == null){
         alert("nothing");
-    } else {
-        alert("đã lưu");
-    }
+    } 
+   
 })
+
