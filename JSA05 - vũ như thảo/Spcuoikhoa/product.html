@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Đăng nhập</title>
-    <link rel="stylesheet" href="login.css">
+    <title>Sản phẩm</title>
+    <link rel = "stylesheet" href="product.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <div class="nav">
-        <a class="nav-item" href="./main.html">Trang chủ</a>
+        <a class="nav-item" href="#">Trang chủ</a>
         <a>
             <input type="text" class="search" id="search" placeholder="Nhập tên sản phẩm">
         </a>
@@ -18,21 +18,19 @@
                 <i class="fa-solid fa-magnifying-glass"></i>
             </button>
         </a>
-        <a class="nav-item" href="#">Sản phẩm</a>
+        <a class="nav-item" href="#" id="acc">Sản phẩm</a>
         <a class="nav-item" href="#">Giỏ hàng</a>
-        <a class="nav-item" id="acc" href="#">Tài khoản</a>
-        <a class="nav-item" href="#">Contact us</a>        
+        <a class="nav-item" href="#">Tài khoản</a>
+        <a class="nav-item" href="#">Contact us</a>   
     </div>
     <p>p</p>
-    <p>p</p>
-    <div class="form">
-        <h1 class="tt">Đăng nhập vào tài khoản </h1>
-        <form id="nameForm">
-            <input type = "text" class="Input" id="uName" placeholder="Nhập tên người dùng">
-            <input type="password" class="Input" id="pass" placeholder="Nhập mật khẩu">
-            <input type="submit" class="Fbutton" value = "Đăng nhập">
-        </form>
+    <div id="products"></div>
+    <div class="product">
+        <div class="Sanpham">
+            <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1691147319i/11273677.jpg">
+            
+        </div>
     </div>
 </body>
-<script src="login.js"></script>
+<script src="product.js"></script>
 </html>

@@ -1,8 +1,6 @@
 document.getElementById('nameForm').addEventListener('submit', function(event){
     var name = document.getElementById('nAme').value;
-    localStorage.setItem('TêN',name);
-    
-    
+    localStorage.setItem('TêN',name);  
 })
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -12,3 +10,4 @@ document.addEventListener('DOMContentLoaded', function() {
         usernameDisplay.textContent = username;
     
 });
+

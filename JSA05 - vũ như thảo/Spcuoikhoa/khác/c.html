@@ -1,0 +1,64 @@
+bài 4:
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Display Images from API</title>
+        <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        #output {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .image-container {
+            margin: 10px;
+        }
+
+        .image-container img {
+            max-width: 200px;
+            max-height: 200px;
+            border: 1px solid #ccc;
+        }
+    </style>
+    </head>
+    <body>
+        <h1>Images from Picsum API</h1>
+        <div id="output"></div>
+
+        <script>
+        async function fetchData() {
+            try {
+                const response = await fetch('https://picsum.photos/v2/list');
+                const data = await response.json();
+
+                const outputElement = document.getElementById('output');
+
+                for (const image of data) {
+                    const imageContainer = document.createElement('div');
+                    imageContainer.classList.add('image-container');
+                    const img = document.createElement('img');
+                    img.src = image.download_url;
+                   
+
+                    imageContainer.appendChild(img);
+                    outputElement.appendChild(imageContainer);
+                }
+            } catch (error) {
+                console.error('Error:', error);
+            }
+        }
+
+fetchData();
+
+
+        fetchData();
+    </script>
+    </body>
+</html>

@@ -30,3 +30,34 @@
 #acc{
     background-color: blanchedalmond;
 }
+/*thanh đăng nhập */
+.Input{
+    height:40px;
+    width:350px;
+    margin-bottom:3rem;
+    display:flex;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 40px;
+}
+.Fbutton{
+    border-radius: 3rem;
+    width:150px;
+    height:50px;
+    background-color: rgb(225, 63, 49);
+    color:rgb(214, 224, 233);
+    font-size:20px;
+    margin-left: 140px;
+}
+/* khác */
+.tt{
+    text-align: center;
+    color:rgb(247, 31, 2);
+}
+.form{
+    border: 3px solid red;
+    margin-top: 40px;
+    width: 400px;
+    margin-left: 450px;
+    height: 420px;
+}

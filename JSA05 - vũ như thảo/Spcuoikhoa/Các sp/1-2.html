@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang hiển thị sản phẩm</title>
+    <style>
+        .product {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .add-to-cart {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="product-list">
+        <div class="product" data-name="Sản phẩm 1">
+            <h2>Sản phẩm 1</h2>
+            <button class="add-to-cart">Thêm vào giỏ hàng</button>
+        </div>
+        <div class="product" data-name="Sản phẩm 2">
+            <h2>Sản phẩm 2</h2>
+            <button class="add-to-cart">Thêm vào giỏ hàng</button>
+        </div>
+        <!-- Thêm nhiều sản phẩm khác tương tự -->
+        <button onclick="checkExistence()">Kiểm tra Tồn Tại</button>
+        <button onclick="deleteData()">Xóa</button>
+        <div id="output"></div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const products = document.querySelectorAll('.product');
+            const cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+            products.forEach(product => {
+                const addToCartButton = product.querySelector('.add-to-cart');
+                const productName = product.dataset.name;
+
+                addToCartButton.addEventListener('click', function() {
+                    cart.push(productName);
+                    localStorage.setItem('cart', JSON.stringify(cart));
+                    alert(`Đã thêm ${productName} vào giỏ hàng!`);
+                });
+            });
+        });
+        function checkExistence() {
+            //const inputValue = document.getElementById('dataInput').value
+            const savedData = localStorage.getItem('cart');
+            
+
+            if (savedData != null) {
+                alert('Dữ liệu đã tồn tại trong Local Storage.');
+            } else {
+                alert('Không có dữ liệu nào được lưu.');
+            }
+        }
+        function deleteData() {
+            localStorage.removeItem('cart');
+            alert('Dữ liệu đã bị xóa khỏi Local Storage.');
+            //displayData();
+        }
+        function displayData() {
+            const savedData = localStorage.getItem('cart');
+            const outputElement = document.getElementById('output');
+
+            if (savedData != null) {
+                outputElement.textContent = `Giỏ hàng có: ${productName}`;
+            } else {
+                outputElement.textContent = 'Chưa có gì trong giỏ hàng.';
+            }
+        }
+        displayData();
+    </script>
+</body>
+</html>

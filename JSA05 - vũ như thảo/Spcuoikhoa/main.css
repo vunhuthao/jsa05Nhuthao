@@ -26,5 +26,63 @@
     border-radius: 5px;
     border-color: red;
     margin-left: 100px;
-    margin-right: 70px;
+
+}
+
+/*màn hình chinhs*/
+.sale{
+    background-color:aquamarine;
+}
+.sale1{
+    background-color: rgb(124, 134, 143);
+    height: 330px;
+    width: 480px;
+    text-align: center;
+}
+.sale1 h1{
+    color:rgb(226, 11, 3);
+    border: solid 3px rgb(101, 46, 46);
+    border-bottom: 3rem;
+}
+.img1{
+    height: 140px;
+    width: 140px;
+    border: solid red 1px;
+    margin-left: 10px;
+    background-color: black;
+}
+.S-button{
+    display: block;
+    border-radius: 2rem;
+    background-color: red;
+    margin: auto;
+    color: white;
+    height: 30px;
+    width: 300px;
+}
+.B-button{
+    margin-top: 10px;
+    background-color: rgba(49, 94, 196, 0.721);
+    color:antiquewhite;
+    border-style: groove;
+    height: 30px;
+    width: 120px;
+}
+.B-button:hover {
+    height: 35px;
+    width: 125px;
+}
+.Lt{
+    margin-top: 30px;
+    background-color: aqua;
+    width: 85px;
+    height:auto;
+}
+.Lt img {
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 15px ;
+}
+.List {
+    
 }

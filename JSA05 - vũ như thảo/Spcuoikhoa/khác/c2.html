@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lưu, Lấy, Xóa và Kiểm tra Tồn Tại dữ liệu</title>
+</head>
+<body>
+    <h1>Lưu, Lấy, Xóa và Kiểm tra Tồn Tại dữ liệu</h1>
+    <input type="text" id="dataInput" placeholder="Nhập dữ liệu...">
+    <button onclick="saveData()">Lưu</button>
+    <button onclick="deleteData()">Xóa</button>
+    <button onclick="checkExistence()">Kiểm tra Tồn Tại</button> <!-- Nút Kiểm tra Tồn Tại -->
+
+    <div id="output"></div>
+
+    <script>
+        function saveData() {
+            const data = document.getElementById('dataInput').value;
+            if (data != null) {
+                localStorage.setItem('savedData', data);
+                alert('Dữ liệu đã được lưu vào Local Storage.');
+                displayData();
+            } else {
+                alert('Vui lòng nhập dữ liệu trước khi lưu.');
+            }
+        }
+
+        function displayData() {
+            const savedData = localStorage.getItem('savedData');
+            const outputElement = document.getElementById('output');
+
+            if (savedData != null) {
+                outputElement.textContent = `Dữ liệu đã lưu: ${savedData}`;
+            } else {
+                outputElement.textContent = 'Chưa có dữ liệu được lưu.';
+            }
+        }
+
+        function deleteData() {
+            localStorage.removeItem('savedData');
+            alert('Dữ liệu đã bị xóa khỏi Local Storage.');
+            displayData();
+        }
+
+        function checkExistence() {
+            const inputValue = document.getElementById('dataInput').value
+            const savedData = localStorage.getItem('savedData');
+
+            if (savedData != null && inputValue == savedData) {
+                alert('Dữ liệu đã tồn tại trong Local Storage.');
+            } else {
+                alert('Không có dữ liệu nào được lưu.');
+            }
+        }
+
+        // Gọi hàm displayData() để hiển thị dữ liệu từ Local Storage
+        displayData();
+    </script>
+</body>
+</html> 
