@@ -28,10 +28,18 @@
     margin-left: 100px;
 
 }
-
+.hed{
+    text-align: center;
+    /*text-decoration: overline underline;*/
+    text-shadow: 2px 2px;
+    color:rgb(226, 67, 67);
+}
 /*màn hình chinhs*/
 .sale{
-    background-color:aquamarine;
+
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
 }
 .sale1{
     background-color: rgb(124, 134, 143);
@@ -39,8 +47,23 @@
     width: 480px;
     text-align: center;
 }
+.sale2{
+    background-color: bisque;
+    margin-left: 70px;
+    width: 690px;
+    text-align: center;
+    border-style: dashed;
+}
+.img2{
+    height: 140px;
+    width: 140px;
+    border: solid red 1px;
+    margin-left: 10px;
+    background-color: rgb(227, 64, 64);
+}
 .sale1 h1{
     color:rgb(226, 11, 3);
+    margin:auto;
     border: solid 3px rgb(101, 46, 46);
     border-bottom: 3rem;
 }
@@ -72,17 +95,37 @@
     height: 35px;
     width: 125px;
 }
+/*phần mục sản phẩm*/
 .Lt{
     margin-top: 30px;
-    background-color: aqua;
+    background-color: rgb(248, 243, 237);
     width: 85px;
-    height:auto;
+    height:120px;
+    margin-right: 30px;
+    text-align: center;
+    border-style: outset;
+}
+.Lt:hover{
+    border-style: outset;
+    background-color: aliceblue;
 }
 .Lt img {
     height: 50px;
     margin-top: 10px;
-    margin-left: 15px ;
+    margin-left: 5px ;
 }
-.List {
-    
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/*dưới*/
+.down{
+    margin-top: 40px;
+    height: 200px;
+    background-color: rgb(216, 95, 89);
+}
+/*khác*/
+body{
+    background-color: rgb(223, 209, 203);
 }

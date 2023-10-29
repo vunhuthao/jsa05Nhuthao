@@ -1,13 +1,16 @@
 document.getElementById('nameForm').addEventListener('submit',function(){
     var pass = document.getElementById('pass').value;
     var username = document.getElementById('uName').value;
-if ( username == 'Thảo' && pass =='pass'){
-    alert("đăng nhập thành công");
-} else {
-    if ( username == 'Lisa' && pass =='pass'){
-        alert("dô xong") 
+    if (username == null ){
+        alert("vui lòng điền thông tin")
     } else {
-        alert("no")
+if ( username == 'Thảo' && pass =='pass'){
+    alert("Chào Thảo!");
+} else {
+    if ( username == 'Linh' && pass =='pass'){
+        alert("Chào Linh") 
+    } else {
+        alert("Sai mật khẩu hoặc password, vui lòng thử lại")
     }
 }
-})
+}})

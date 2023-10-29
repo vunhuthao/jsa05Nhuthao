@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="output"></div>
+</body>
+<script>
+    function displayData() {
+            const savedData = localStorage.getItem('cart');
+            const outputElement = document.getElementById('output');
+
+            if (savedData != null) {
+                outputElement.textContent = `Giỏ hàng có: ${productName}`;
+            } else {
+                outputElement.textContent = 'Chưa có gì trong giỏ hàng.';
+            }
+        }
+        displayData();
+</script>
+</html>

@@ -16,11 +16,6 @@ let products = {
        //     price: "81.000 đ",
        //     image: "https://cdn0.fahasa.com/media/catalog/product/8/9/8934974187639.jpg"
        // },
-       /* {
-            bName: "",
-            price: "",
-            image: ""
-        },
         {
             bName: "",
             price: "",
@@ -30,7 +25,12 @@ let products = {
             bName: "",
             price: "",
             image: ""
-        },*/
+        },
+        {
+            bName: "",
+            price: "",
+            image: ""
+        },
 
     ]
 }
@@ -58,6 +58,10 @@ for (let i of products.data){
     let price = document.createElement("h3");
     price.innerText = "Giá: " + i.price;
     container.appendChild(price);
+
+    let bTab = document.createElement("button");
+    bTab.innerText='xem thêm';
+      container.appendChild(bTab);
 
     card.appendChild(container);
     document.getElementById("products").appendChild(card);
