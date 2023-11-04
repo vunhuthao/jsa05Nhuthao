@@ -18,7 +18,7 @@
             </button>
         </a>
         <a class="nav-item" href="./product.html">Sản phẩm</a>
-        <a class="nav-item" href="#">Giỏ hàng</a>
+        <a class="nav-item" href="./show.html">Giỏ hàng</a>
         <a class="nav-item" id="acc" href="./login.html">Tài khoản</a>
         <a class="nav-item" href="#">Contact us</a>   
     </div>
@@ -26,10 +26,10 @@
     <p>p</p>
     <div class="body">
         <div class="body1">
-         <img src="https://cdn0.fahasa.com/media/catalog/product/8/9/8934974187639.jpg" class="img1">
+         <img id="img1" src="https://cdn0.fahasa.com/media/catalog/product/8/9/8934974187639.jpg" class="img1">
          <div id="info-gen">
             <div class="product">
-                <h1 class="h1">Cho tôi xin một vé đi tuổi thơ(Tái bản 2023)</h1>
+                <h1 class="h1" id="name" value="81">Cho tôi xin một vé đi tuổi thơ(Tái bản 2023)</h1>
                 <div class="p1">
                   <div class="p2">
                         <p>Nhà cung cấp: NXB Trẻ</p>
@@ -40,14 +40,14 @@
                      <p>Hình thức bìa: Bìa mềm</p>
                    </div>
                 </div>
-                <h1 class="h2">81,000đ</h1>
+                <h1 class="h2" id="price">81,000</h1>
                 <p class="p1">Giao hàng trong: 1- 4 ngày</p>
                 <p class="p1">Chính sách đổi trả: Đổi trong 30 ngày</p>
                 <div class="numb">
                     <p class="p1">Số lượng: </p>
                     <div class="numb2">
                      <button id="p6" onclick="bPlus()">+</button>
-                     <p class="p1" id="p5">0</p>
+                     <p class="p1" id="p5">1</p>
                      <button id="p6" onclick="bMinus()">-</button>
                     </div>
                 </div>
@@ -55,11 +55,16 @@
           </div>
         </div>
         <div class="butto">
-          <button id="add">Thêm vào giỏ hàng</button>
+          <button id="add" onclick="bAdd()">Thêm vào giỏ hàng</button>
           <button id="buy">Mua ngay</button>
         </div> 
-    </div>   
+        <h1 id="show">ư</h1>
+    </div>  
+    <h1 id="slsp">d</h1> 
+    
     
 </body>
-<script src="1.js"></script>
+<script src="1.js">
+
+</script>
 </html>

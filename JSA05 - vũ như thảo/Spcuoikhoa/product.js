@@ -66,3 +66,16 @@ for (let i of products.data){
     card.appendChild(container);
     document.getElementById("products").appendChild(card);
 }
+
+var btn = document.getElementsByTagName("button");
+
+for (let i = 0; i<btn.length; i++){
+    btn[i].addEventListener("click", function(){
+        //alert("nút số: " + i)
+        var hinh = btn[i].parentElement.childNodes.childNodes;
+        alert(hinh);
+    });
+}
+alert(hinh);
+//btn[0].addEventListener("click", addtocat);
+

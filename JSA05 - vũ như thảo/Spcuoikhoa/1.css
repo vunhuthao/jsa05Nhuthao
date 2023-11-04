@@ -102,6 +102,8 @@
     height: 40px;
     width: 170px;
     color: rgb(202, 2, 2);
+    background-color:white;
+    border: solid 3px rgb(202, 2, 2);
 }
 #buy{
     margin-left: 60px;
