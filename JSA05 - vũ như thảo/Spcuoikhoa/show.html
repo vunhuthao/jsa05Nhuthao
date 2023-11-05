@@ -4,34 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./show.css">
 </head>
 <body onload="loaddatacart()">
+    <div class="nav">
+        <a class="nav-item" href="#">Trang chủ</a>
+        <a>
+            <input type="text" class="search" id="search" placeholder="Nhập tên sản phẩm">
+        </a>
+        <a>
+            <button id="Bsearch" class="search" type="submit" class="searchButton">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </a>
+        <a class="nav-item" href="./product.html">Sản phẩm</a>
+        <a class="nav-item" href="./show.html">Giỏ hàng</a>
+        <a id="slsp">0</a> 
+        <a class="nav-item" id="acc" href="./login.html">Tài khoản</a>
+        <a class="nav-item" href="#">Contact us</a>   
+    </div>
+    <p class="p">p</p>
+    <p>p</p>
 <section class="row">
     <div class="container">
-        <table>
-            <div class="cart-left">
-                <table>
-                    <tr>
-                        <th>Product name</th>
-                        <th>Price</th>
-                        <th>Quantity</th>
-                        <th>Total</th>
-                        <th>Remove</th>
-                    </tr>
-                    <tbody id="thongtingiohang">
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                      
-                    </tbody>
-                </table>
-                <br>
-                <button onclick="showcart()">Xóa rỗng giỏ hàng</button>
-            </div>
-        </table>
+        <div class="cart-left">
+            <table>
+                <tr>
+                    <th>Products</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                    <th>Remove</th>
+                </tr>
+                <tbody id="thongtingiohang">
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 </section>
+<button onclick="delcart()">sss</button>
+<a href="(1)Cho tôi xin một vé đi tuổi thơ.html">s</a>
 
 </body>
 <script src="1.js">

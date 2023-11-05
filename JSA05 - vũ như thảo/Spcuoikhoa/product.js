@@ -17,9 +17,9 @@ let products = {
        //     image: "https://cdn0.fahasa.com/media/catalog/product/8/9/8934974187639.jpg"
        // },
         {
-            bName: "",
-            price: "",
-            image: ""
+            bName: "Cho tôi xin một vé đi tuổi thơ",
+            price: "81.000 đ",
+            image: "https://cdn0.fahasa.com/media/catalog/product/8/9/8934974187639.jpg"
         },
         {
             bName: "",
@@ -59,23 +59,27 @@ for (let i of products.data){
     price.innerText = "Giá: " + i.price;
     container.appendChild(price);
 
+
+
     let bTab = document.createElement("button");
     bTab.innerText='xem thêm';
       container.appendChild(bTab);
+    var btn = document.getElementsByTagName("button");
 
     card.appendChild(container);
     document.getElementById("products").appendChild(card);
 }
 
 var btn = document.getElementsByTagName("button");
+var link=["i","login.html","main.html","(1)Cho tôi xin một vé đi tuổi thơ.html"];
 
 for (let i = 0; i<btn.length; i++){
     btn[i].addEventListener("click", function(){
-        //alert("nút số: " + i)
-        var hinh = btn[i].parentElement.childNodes.childNodes;
-        alert(hinh);
+        //alert("nút số: " + i);
+        window.location= link[i];
+
     });
 }
-alert(hinh);
+
 //btn[0].addEventListener("click", addtocat);
 
