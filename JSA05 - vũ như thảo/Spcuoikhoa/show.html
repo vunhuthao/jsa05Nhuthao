@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./show.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body onload="loaddatacart()">
     <div class="nav">
-        <a class="nav-item" href="#">Trang chủ</a>
+        <a class="nav-item" href="./main.html">Trang chủ</a>
         <a>
             <input type="text" class="search" id="search" placeholder="Nhập tên sản phẩm">
         </a>
@@ -18,9 +19,9 @@
             </button>
         </a>
         <a class="nav-item" href="./product.html">Sản phẩm</a>
-        <a class="nav-item" href="./show.html">Giỏ hàng</a>
+        <a class="nav-item"  id="acc" href="./show.html">Giỏ hàng</a>
         <a id="slsp">0</a> 
-        <a class="nav-item" id="acc" href="./login.html">Tài khoản</a>
+        <a class="nav-item" href="./login.html">Tài khoản</a>
         <a class="nav-item" href="#">Contact us</a>   
     </div>
     <p class="p">p</p>
@@ -30,13 +31,13 @@
         <div class="cart-left">
             <table>
                 <tr>
-                    <th>Products</th>
-                    <th>Price</th>
-                    <th>Quantity</th>
-                    <th>Total</th>
-                    <th>Remove</th>
+                    <th class="div1">Products</th>
+                    <th class="div1">Price</th>
+                    <th class="div1">Quantity</th>
+                    <th class="div1">Total</th>
+                    <th class="div1"> Remove</th>
                 </tr>
-                <tbody id="thongtingiohang">
+                <tbody class="hs" id="thongtingiohang">
                   <tr>
                     <td></td>
                     <td></td>
@@ -46,11 +47,13 @@
                   </tr>
                 </tbody>
             </table>
+            <button class="Bd" onclick="delcart()">Xoá toàn bộ giỏ hàng</button>
+            <h2 class="tt" id="tongdonhang">Tổng đơn hàng: 0 đ</h2>
+<button class="buB" onclick="buB()" id="buB">Đặt hàng</button>
         </div>
     </div>
 </section>
-<button onclick="delcart()">sss</button>
-<a href="(1)Cho tôi xin một vé đi tuổi thơ.html">s</a>
+
 
 </body>
 <script src="1.js">

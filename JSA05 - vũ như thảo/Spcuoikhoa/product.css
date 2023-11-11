@@ -20,7 +20,7 @@
 .nav-item:hover{
     background-color:antiquewhite ;
 }
-#search{
+#search-input{
     width: 300px;
     height: 30px;
     border-radius: 5px;
@@ -82,4 +82,40 @@ img{
     width: 240px;
     margin-left: 1px;
     margin-top: 1rem;
+}
+/*phần mục sản phẩm*/
+.Lt{
+    margin-top: 30px;
+    background-color: rgb(248, 243, 237);
+    width: 85px;
+    height:120px;
+    margin-right: 30px;
+    text-align: center;
+    border-style: outset;
+    margin-top: 40px;
+    text-decoration: none; 
+}
+.Lt:hover{
+    border-style: outset;
+    background-color: aliceblue;
+}
+.lt-img {
+    height: 50px;
+    width:50px;
+}
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.lt-t{
+    text-decoration: none; 
+}
+
+
+.head{
+    color:red;
+    background-color: antiquewhite;
+    font-size: 50px;
+    text-align: center;
 }

@@ -1,15 +1,15 @@
 let products = {
     data: [
         {
-            bName: "Totto chan bên cửa sổ",
-            price: "78.500 đ",
-            image: "https://upload.wikimedia.org/wikipedia/vi/f/fb/Totto-chan_b%C3%AAn_c%E1%BB%ADa_s%E1%BB%95_%28s%C3%A1ch%29.jpg"
+            bName: "Harry potter và hòn đá phù thuỷ",
+            price: "150,000 đ",
+            image: "https://cdn0.fahasa.com/media/catalog/product/8/9/8934974179672.jpg"
         },
 
         {
-            bName: "Mắt biếc",
-            price: "77.000 đ",
-            image: "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1691147319i/11273677.jpg"
+            bName: "Harry Potter và tên từ nhân ngục azkaban",
+            price: "164,000 đ",
+            image: "https://cdn0.fahasa.com/media/catalog/product/8/9/8934974179658.jpg"
         },
        // {
        //     bName: "Cho tôi xin một vé đi tuổi thơ",
@@ -17,9 +17,9 @@ let products = {
        //     image: "https://cdn0.fahasa.com/media/catalog/product/8/9/8934974187639.jpg"
        // },
         {
-            bName: "Cho tôi xin một vé đi tuổi thơ",
-            price: "81.000 đ",
-            image: "https://cdn0.fahasa.com/media/catalog/product/8/9/8934974187639.jpg"
+            bName: "Harry Potter và bảo bối tử thần",
+            price: "268.000 đ",
+            image: "https://cdn0.fahasa.com/media/catalog/product/8/9/8934974179641.jpg"
         },
         {
             bName: "",
@@ -71,7 +71,7 @@ for (let i of products.data){
 }
 
 var btn = document.getElementsByTagName("button");
-var link=["product.html","login.html","main.html","(1)Cho tôi xin một vé đi tuổi thơ.html"];
+//var link=["product.html","login.html","main.html","(1)Cho tôi xin một vé đi tuổi thơ.html"];
 
 btn[0].addEventListener("click", function(){
     let searchInput = document.getElementById("search-input").value.toUpperCase()
@@ -102,4 +102,3 @@ var cart = JSON.parse(localStorage.getItem("cart"));
     }
 
 //btn[0].addEventListener("click", addtocat);
-

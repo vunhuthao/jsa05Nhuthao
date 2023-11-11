@@ -1,15 +1,15 @@
 let products = {
     data: [
         {
-            bName: "Totto chan bên cửa sổ",
-            price: "78.500 đ",
-            image: "https://upload.wikimedia.org/wikipedia/vi/f/fb/Totto-chan_b%C3%AAn_c%E1%BB%ADa_s%E1%BB%95_%28s%C3%A1ch%29.jpg"
+             bName: "Kho vàng sắm sơn",
+            price: "70.000 đ đ",
+            image: "img/8935244877199-removebg-preview.png"
         },
 
         {
-            bName: "Mắt biếc",
-            price: "77.000 đ",
-            image: "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1691147319i/11273677.jpg"
+            bName: "Tết ở làng địa ngục",
+            price: "108.000 đ",
+            image: "img/a342260f9b341d980cbdd64c80a9f959-removebg-preview.png"
         },
        // {
        //     bName: "Cho tôi xin một vé đi tuổi thơ",
@@ -17,9 +17,9 @@ let products = {
        //     image: "https://cdn0.fahasa.com/media/catalog/product/8/9/8934974187639.jpg"
        // },
         {
-            bName: "Cho tôi xin một vé đi tuổi thơ",
+            bName: "Sĩ số lớp bằng 0",
             price: "81.000 đ",
-            image: "https://cdn0.fahasa.com/media/catalog/product/8/9/8934974187639.jpg"
+            image: "img/24d0a082-972d-44c5-bcc3-5b41f575cbd5-removebg-preview.png"
         },
         {
             bName: "",
@@ -71,7 +71,7 @@ for (let i of products.data){
 }
 
 var btn = document.getElementsByTagName("button");
-var link=["product.html","login.html","main.html","(1)Cho tôi xin một vé đi tuổi thơ.html"];
+//var link=["product.html","login.html","main.html","(1)Cho tôi xin một vé đi tuổi thơ.html"];
 
 btn[0].addEventListener("click", function(){
     let searchInput = document.getElementById("search-input").value.toUpperCase()
@@ -102,4 +102,3 @@ var cart = JSON.parse(localStorage.getItem("cart"));
     }
 
 //btn[0].addEventListener("click", addtocat);
-

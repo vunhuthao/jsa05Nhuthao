@@ -74,19 +74,19 @@ let products = {
 }
 for (let i of products.data){
 
-    let card = document.createElement("div")
-    card.classList.add("card")
+    let card = document.createElement("div");
+    card.classList.add("card");
 
-    let imgContainer = document.createElement("div")
-    imgContainer.classList.add("image-container")
+    let imgContainer = document.createElement("div");
+    imgContainer.classList.add("image-container");
 
-    let image = document.createElement("img")
-    image.setAttribute("src", i.image)
-    imgContainer.appendChild(image)
+    let image = document.createElement("img");
+    image.setAttribute("src", i.image);
+    imgContainer.appendChild(image);
     card.appendChild(imgContainer)
-
-    let container = document.createElement("div")
-    container.classList.add("container")
+;
+    let container = document.createElement("div");
+    container.classList.add("container");
 
     let name = document.createElement("h5");
     name.classList.add("product-name");

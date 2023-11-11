@@ -31,3 +31,49 @@
 .p{
     font-size: 25px;
 }
+/*giỏ hàng*/
+.container{
+    border: solid rgb(80, 76, 76) 3px;
+    width: 600px;
+    margin:auto;
+}
+.div1{
+    background-color: rgb(223, 127, 127);
+    border: solid rgb(223, 181, 181) 3px;
+    
+
+}
+.hs{
+    border: solid 4px rgb(97, 42, 42);
+}
+.Bd{
+    margin-left: 230px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    height: 40px;
+    width: 150px;
+    border: none;
+    background-color: rgb(251, 77, 77);
+    color: white;
+}
+.tt{
+    margin-left: 180px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.buB{
+    margin-left: 230px;
+    margin-bottom: 20px;
+    height: 40px;
+    width: 150px;
+    border: none;
+    background-color: rgb(219, 250, 15);
+    color: black;
+    font-weight: 100;
+    font-size: large;
+}
+
+#acc{
+    background-color: blanchedalmond;
+}

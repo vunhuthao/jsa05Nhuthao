@@ -14,3 +14,8 @@ if ( username == 'Thảo' && pass =='pass'){
     }
 }
 }})
+
+var cart = JSON.parse(localStorage.getItem("cart"));
+    if (cart != null){
+        document.getElementById("slsp").innerHTML = cart.length;
+    }

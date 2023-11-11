@@ -101,5 +101,3 @@ var cart = JSON.parse(localStorage.getItem("cart"));
         document.getElementById("slsp").innerHTML = cart.length;
     }
 
-//btn[0].addEventListener("click", addtocat);
-
